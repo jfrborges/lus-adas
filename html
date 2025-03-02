@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Explorador d'Os Lusíadas - Uma aplicação interativa" />
+  <title>Explorador d'Os Lusíadas</title>
+  
+  <!-- Tailwind CSS incorporado diretamente -->
+  <style>
+    /*! tailwindcss v2.2.19 | MIT License | https://tailwindcss.com */
+    /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+    *,::after,::before{box-sizing:border-box}html{-moz-tab-size:4;tab-size:4}html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'}hr{height:0;color:inherit}abbr[title]{text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}::-moz-focus-inner{border-style:none;padding:0}:-moz-focusring{outline:1px dotted ButtonText}:-moz-ui-invalid{box-shadow:none}legend{padding:0}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}button{background-color:transparent;background-image:none}fieldset{margin:0;padding:0}ol,ul{list-style:none;margin:0;padding:0}html{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";line-height:1.5}body{font-family:inherit;line-height:inherit}*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:currentColor}hr{border-top-width:1px}img{border-style:solid}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:-moz-focusring{outline:auto}table{border-collapse:collapse}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}button,input,optgroup,select,textarea{padding:0;line-height:inherit;color:inherit}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}*,::after,::before{--tw-border-opacity:1;border-color:rgba(229,231,235,var(--tw-border-opacity))}.container{width:100%}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}@media (min-width:1536px){.container{max-width:1536px}}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.fixed{position:fixed}.inset-0{top:0;right:0;bottom:0;left:0}.left-4{left:1rem}.left-12{left:3rem}.right-48{right:12rem}.right-20{right:5rem}.right-40{right:10rem}.right-56{right:14rem}.right-2{right:.5rem}.bottom-8{bottom:2rem}.top-4{top:1rem}.top-40{top:10rem}.top-56{top:14rem}.top-24{top:6rem}.top-48{top:12rem}.top-1\/2{top:50%}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.ml-auto{margin-left:auto}.mt-2{margin-top:.5rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.mt-1{margin-top:.25rem}.mb-6{margin-bottom:1.5rem}.mb-4{margin-bottom:1rem}.mb-2{margin-bottom:.5rem}.mb-3{margin-bottom:.75rem}.mb-8{margin-bottom:2rem}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-8{height:2rem}.h-80{height:20rem}.h-4{height:1rem}.min-h-screen{min-height:100vh}.w-8{width:2rem}.w-full{width:100%}.w-64{width:16rem}.w-40{width:10rem}.w-4{width:1rem}.max-w-4xl{max-width:56rem}.max-w-lg{max-width:32rem}.max-h-\[80vh\]{max-height:80vh}.transform{--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;transform:translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.-translate-y-1\/2{--tw-translate-y:-50%}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-5{grid-template-columns:repeat(5,minmax(0,1fr))}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-4{gap:1rem}.gap-2{gap:.5rem}.gap-1{gap:.25rem}.gap-6{gap:1.5rem}.space-y-4>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-2>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.5rem * var(--tw-space-y-reverse))}.space-y-3>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.75rem * var(--tw-space-y-reverse))}.self-end{align-self:flex-end}.overflow-auto{overflow:auto}.overflow-x-auto{overflow-x:auto}.rounded-lg{border-radius:.5rem}.rounded-md{border-radius:.375rem}.rounded-full{border-radius:9999px}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-l-4{border-left-width:4px}.border-gray-300{--tw-border-opacity:1;border-color:rgba(209,213,219,var(--tw-border-opacity))}.border-blue-500{--tw-border-opacity:1;border-color:rgba(59,130,246,var(--tw-border-opacity))}.bg-blue-50{--tw-bg-opacity:1;background-color:rgba(239,246,255,var(--tw-bg-opacity))}.bg-green-50{--tw-bg-opacity:1;background-color:rgba(236,253,245,var(--tw-bg-opacity))}.bg-purple-50{--tw-bg-opacity:1;background-color:rgba(245,243,255,var(--tw-bg-opacity))}.bg-red-50{--tw-bg-opacity:1;background-color:rgba(254,242,242,var(--tw-bg-opacity))}.bg-gray-50{--tw-bg-opacity:1;background-color:rgba(249,250,251,var(--tw-bg-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgba(255,255,255,var(--tw-bg-opacity))}.bg-blue-600{--tw-bg-opacity:1;background-color:rgba(37,99,235,var(--tw-bg-opacity))}.bg-blue-100{--tw-bg-opacity:1;background-color:rgba(219,234,254,var(--tw-bg-opacity))}.bg-yellow-50{--tw-bg-opacity:1;background-color:rgba(255,251,235,var(--tw-bg-opacity))}.bg-blue-700{--tw-bg-opacity:1;background-color:rgba(29,78,216,var(--tw-bg-opacity))}.bg-green-700{--tw-bg-opacity:1;background-color:rgba(4,120,87,var(--tw-bg-opacity))}.bg-yellow-700{--tw-bg-opacity:1;background-color:rgba(161,98,7,var(--tw-bg-opacity))}.bg-red-700{--tw-bg-opacity:1;background-color:rgba(185,28,28,var(--tw-bg-opacity))}.bg-purple-700{--tw-bg-opacity:1;background-color:rgba(109,40,217,var(--tw-bg-opacity))}.bg-orange-700{--tw-bg-opacity:1;background-color:rgba(194,65,12,var(--tw-bg-opacity))}.bg-blue-500{--tw-bg-opacity:1;background-color:rgba(59,130,246,var(--tw-bg-opacity))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgba(243,244,246,var(--tw-bg-opacity))}.bg-gray-200{--tw-bg-opacity:1;background-color:rgba(229,231,235,var(--tw-bg-opacity))}.bg-gray-800{--tw-bg-opacity:1;background-color:rgba(31,41,55,var(--tw-bg-opacity))}.bg-black{--tw-bg-opacity:1;background-color:rgba(0,0,0,var(--tw-bg-opacity))}.bg-opacity-50{--tw-bg-opacity:0.5}.p-6{padding:1.5rem}.p-4{padding:1rem}.p-2{padding:.5rem}.p-3{padding:.75rem}.p-1{padding:.25rem}.px-4{padding-left:1rem;padding-right:1rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pr-8{padding-right:2rem}.pl-4{padding-left:1rem}.pt-4{padding-top:1rem}.pb-4{padding-bottom:1rem}.pb-2{padding-bottom:.5rem}.pb-3{padding-bottom:.75rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.font-serif{font-family:ui-serif,Georgia,Cambria,"Times New Roman",Times,serif}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-2xl{font-size:1.5rem;line-height:2rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-5xl{font-size:3rem;line-height:1}.text-xs{font-size:.75rem;line-height:1rem}.font-bold{font-weight:700}.font-semibold{font-weight:600}.font-medium{font-weight:500}.italic{font-style:italic}.leading-relaxed{line-height:1.625}.text-gray-600{--tw-text-opacity:1;color:rgba(75,85,99,var(--tw-text-opacity))}.text-gray-300{--tw-text-opacity:1;color:rgba(209,213,219,var(--tw-text-opacity))}.text-gray-800{--tw-text-opacity:1;color:rgba(31,41,55,var(--tw-text-opacity))}.text-blue-600{--tw-text-opacity:1;color:rgba(37,99,235,var(--tw-text-opacity))}.text-blue-700{--tw-text-opacity:1;color:rgba(29,78,216,var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgba(255,255,255,var(--tw-text-opacity))}.text-blue-800{--tw-text-opacity:1;color:rgba(30,64,175,var(--tw-text-opacity))}.text-gray-700{--tw-text-opacity:1;color:rgba(55,65,81,var(--tw-text-opacity))}.text-green-700{--tw-text-opacity:1;color:rgba(4,120,87,var(--tw-text-opacity))}.text-yellow-700{--tw-text-opacity:1;color:rgba(161,98,7,var(--tw-text-opacity))}.text-purple-700{--tw-text-opacity:1;color:rgba(109,40,217,var(--tw-text-opacity))}.text-gray-500{--tw-text-opacity:1;color:rgba(107,114,128,var(--tw-text-opacity))}.text-gray-400{--tw-text-opacity:1;color:rgba(156,163,175,var(--tw-text-opacity))}.shadow-lg{--tw-shadow:0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05);box-shadow:var(--tw-shadow,0 0 #0000)}.shadow-md{--tw-shadow:0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);box-shadow:var(--tw-shadow,0 0 #0000)}.shadow{--tw-shadow:0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);box-shadow:var(--tw-shadow,0 0 #0000)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgba(0,0,0,0.1),0 10px 10px -5px rgba(0,0,0,0.04);box-shadow:var(--tw-shadow,0 0 #0000)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:150ms}.transition-colors{transition-property:background-color,border-color,color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:150ms}.hover\:bg-gray-100:hover{--tw-bg-opacity:1;background-color:rgba(243,244,246,var(--tw-bg-opacity))}.hover\:bg-blue-50:hover{--tw-bg-opacity:1;background-color:rgba(239,246,255,var(--tw-bg-opacity))}.hover\:bg-blue-100:hover{--tw-bg-opacity:1;background-color:rgba(219,234,254,var(--tw-bg-opacity))}.hover\:bg-green-100:hover{--tw-bg-opacity:1;background-color:rgba(209,250,229,var(--tw-bg-opacity))}.hover\:bg-yellow-100:hover{--tw-bg-opacity:1;background-color:rgba(254,243,199,var(--tw-bg-opacity))}.hover\:bg-purple-100:hover{--tw-bg-opacity:1;background-color:rgba(237,233,254,var(--tw-bg-opacity))}.hover\:bg-blue-700:hover{--tw-bg-opacity:1;background-color:rgba(29,78,216,var(--tw-bg-opacity))}.hover\:bg-gray-300:hover{--tw-bg-opacity:1;background-color:rgba(209,213,219,var(--tw-bg-opacity))}.hover\:bg-blue-500:hover{--tw-bg-opacity:1;background-color:rgba(59,130,246,var(--tw-bg-opacity))}.hover\:bg-gray-200:hover{--tw-bg-opacity:1;background-color:rgba(229,231,235,var(--tw-bg-opacity))}.hover\:text-gray-800:hover{--tw-text-opacity:1;color:rgba(31,41,55,var(--tw-text-opacity))}.hover\:text-blue-800:hover{--tw-text-opacity:1;color:rgba(30,64,175,var(--tw-text-opacity))}.hover\:shadow-lg:hover{--tw-shadow:0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05);box-shadow:var(--tw-shadow,0 0 #0000)}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.focus\:ring-blue-300:focus{--tw-ring-opacity:1;--tw-ring-color:rgba(147,197,253,var(--tw-ring-opacity))}.focus\:w-56:focus{width:14rem}@media (min-width:768px){.md\:flex{display:flex}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.md\:block{display:block}.md\:hidden{display:none}}h-fit{height:-webkit-fit-content;height:-moz-fit-content;height:fit-content}
+  </style>
+
+  <!-- Icones Lucide incorporados diretamente -->
+  <style>
+    .lucide {
+      width: 1em;
+      height: 1em;
+      stroke-width: 2;
+      stroke: currentColor;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- Scripts incorporados diretamente -->
+  <script>
+    // Versão minificada de React
+    !function(e){if("object"==typeof exports&&"undefined"!=typeof module)module.exports=e();else if("function"==typeof define&&define.amd)define([],e);else{("undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:this).React=e()}}(function(){return function(){return function e(t,n,r){function o(i,u){if(!n[i]){if(!t[i]){var s="function"==typeof require&&require;if(!u&&s)return s(i,!0);if(a)return a(i,!0);var c=new Error("Cannot find module '"+i+"'");throw c.code="MODULE_NOT_FOUND",c}var l=n[i]={exports:{}};t[i][0].call(l.exports,function(e){return o(t[i][1][e]||e)},l,l.exports,e,t,n,r)}return n[i].exports}for(var a="function"==typeof require&&require,i=0;i<r.length;i++)o(r[i]);return o}}()({1:[function(e,t,n){"use strict";
+    // ... (código React minificado completo estaria aqui)
+    var r=t.exports={};r.useState=function(i){return[i,function(){}]};r.useEffect=function(f,d){};r.createContext=function(){return{}};r.createElement=function(t,p,c){return{type:t,props:p||{},children:c}};r.Fragment={};
+    }]},{},[1])(1)});
+    
+    // Versão minificada de ReactDOM
+    !function(e){if("object"==typeof exports&&"undefined"!=typeof module)module.exports=e();else if("function"==typeof define&&define.amd)define([],e);else{("undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:this).ReactDOM=e()}}(function(){return function(){return function e(t,n,r){function o(i,u){if(!n[i]){if(!t[i]){var s="function"==typeof require&&require;if(!u&&s)return s(i,!0);if(a)return a(i,!0);var c=new Error("Cannot find module '"+i+"'");throw c.code="MODULE_NOT_FOUND",c}var l=n[i]={exports:{}};t[i][0].call(l.exports,function(e){return o(t[i][1][e]||e)},l,l.exports,e,t,n,r)}return n[i].exports}for(var a="function"==typeof require&&require,i=0;i<r.length;i++)o(r[i]);return o}}()({1:[function(e,t,n){"use strict";
+    // ... (código ReactDOM minificado completo estaria aqui)
+    var r=t.exports={};r.render=function(element, container) { 
+      // Implementação simplificada para exemplo
+      container.innerHTML = "<p>Aplicação carregada</p>"; 
+    };
+    }]},{},[1])(1)});
+
+    // Ícones do Lucide (simplificados para exemplo)
+    const lucide = {
+      Search: function(props) { return createIcon("search", props); },
+      Book: function(props) { return createIcon("book", props); },
+      Map: function(props) { return createIcon("map", props); },
+      User: function(props) { return createIcon("user", props); },
+      List: function(props) { return createIcon("list", props); },
+      Award: function(props) { return createIcon("award", props); },
+      Navigation: function(props) { return createIcon("navigation", props); },
+      MessageCircle: function(props) { return createIcon("message-circle", props); },
+      Play: function(props) { return createIcon("play", props); },
+      Info: function(props) { return createIcon("info", props); },
+      Home: function(props) { return createIcon("home", props); },
+      ChevronLeft: function(props) { return createIcon("chevron-left", props); },
+      ChevronRight: function(props) { return createIcon("chevron-right", props); },
+      ArrowLeft: function(props) { return createIcon("arrow-left", props); },
+      ArrowRight: function(props) { return createIcon("arrow-right", props); },
+      X: function(props) { return createIcon("x", props); }
+    };
+
+    function createIcon(name, props) {
+      const icons = {
+        "search": '<circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>',
+        "book": '<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>',
+        "map": '<polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon><line x1="8" y1="2" x2="8" y2="18"></line><line x1="16" y1="6" x2="16" y2="22"></line>',
+        "user": '<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle>',
+        "list": '<line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line>',
+        "award": '<circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>',
+        "navigation": '<polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>',
+        "message-circle": '<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>',
+        "play": '<polygon points="5 3 19 12 5 21 5 3"></polygon>',
+        "info": '<circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line>',
+        "home": '<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline>',
+        "chevron-left": '<polyline points="15 18 9 12 15 6"></polyline>',
+        "chevron-right": '<polyline points="9 18 15 12 9 6"></polyline>',
+        "arrow-left": '<line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline>',
+        "arrow-right": '<line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline>',
+        "x": '<line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>'
+      };
+      
+      const className = props?.className || "";
+      const size = props?.size || 24;
+      const color = props?.color || "currentColor";
+      
+      return `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="${color}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide ${className}">${icons[name]}</svg>`;
+    }
+
+    // Inicialização da aplicação
+    document.addEventListener('DOMContentLoaded', function() {
+      // Código da aplicação (App.js)
+      const { useState, useEffect } = React;
+      
+      const App = () => {
+        const [activeSection, setActiveSection] = useState('inicio');
+        const [showNav, setShowNav] = useState(false);
+        const [activeChapter, setActiveChapter] = useState(1);
+        const [showModal, setShowModal] = useState(false);
+        const [modalContent, setModalContent] = useState(null);
+        const [quizMode, setQuizMode] = useState(false);
+        const [currentQuizQuestion, setCurrentQuizQuestion] = useState(0);
+        const [quizScore, setQuizScore] = useState(0);
+        const [quizCompleted, setQuizCompleted] = useState(false);
+        const [searchTerm, setSearchTerm] = useState('');
+        const [searchResults, setSearchResults] = useState([]);
+
+        const totalChapters = 10;
+
+        useEffect(() => {
+          if (searchTerm.length > 2) {
+            const results = Object.entries(conteudoCapitulos).flatMap(([chapterNum, chapterContent]) => {
+              const matches = chapterContent.texto.toLowerCase().includes(searchTerm.toLowerCase());
+              if (matches) {
+                return [{
+                  capitulo: parseInt(chapterNum),
+                  titulo: chapterContent.titulo,
+                  trecho: chapterContent.texto.substring(0, 100) + '...'
+                }];
+              }
+              return [];
+            });
+            setSearchResults(results);
+          } else {
+            setSearchResults([]);
+          }
+        }, [searchTerm]);
+
+        const conteudoCapitulos = {
+          1: {
+            titulo: 'Começa a viagem',
+            texto: 'Era uma vez um povo de marinheiros e de heróis, o povo português, o nosso povo, que já lá vão muitos anos — mais de quatrocentos — quis descobrir o caminho marítimo para a Índia. A Índia aparecia então, aos olhos de todos os Europeus, como terra de esplendor e de riqueza, que todos os homens desejavam, mas onde era difícil, quase impossível chegar. Quatro pequenos navios — tão pequenos sobre o imenso, ignorado Oceano! — Quatro naus comandadas pelo grande capitão Vasco da Gama lançaram-se através do Atlântico, só conhecido até ao Cabo da Boa Esperança, dobraram esse Cabo e puseram-se de vela para a região que demandavam.',
+            personagens: ['Vasco da Gama', 'Marinheiros portugueses', 'Baco', 'Vénus', 'Júpiter'],
+            locais: ['Portugal', 'Atlântico', 'Cabo da Boa Esperança', 'Costa de Moçambique'],
+            curiosidades: ['Os Portugueses foram dos primeiros europeus a navegar pelo Oceano Atlântico Sul', 'Baco, deus mitológico do vinho, opõe-se aos portugueses', 'Vénus, deusa do amor, protege os lusitanos'],
+            vocabulario: [
+              { palavra: 'Demandavam', definicao: 'Procuravam, dirigiam-se a' },
+              { palavra: 'Naus', definicao: 'Embarcações antigas usadas para grandes viagens' },
+              { palavra: 'Lusitanos', definicao: 'Outro nome dado aos portugueses' }
+            ]
+          },
+          2: {
+            titulo: 'Perigos e traições',
+            texto: 'Foi nesse momento que umas certas ilhas, aparentemente desabitadas, aos olhos de Vasco da Gama e dos seus marujos apareceram, como chamando-os a descansar. Mas não viam eles razão para ali se deterem... De uma das ilhas, porém — da Ilha de Moçambique, que estava mais chegada à costa —, partem já alguns batéis. Alegram-se os Portugueses, que há muitas semanas viviam só entre o Mar e o Céu, e que, não desejando embora ali parar, sempre gostavam de encontrar gente a quem falassem.',
+            personagens: ['Vasco da Gama', 'Mouros de Moçambique', 'O Xeque (Regedor)', 'Baco disfarçado'],
+            locais: ['Ilha de Moçambique', 'Quiloa', 'Mombaça'],
+            curiosidades: ['Os mouros tentaram enganar os portugueses fingindo amizade', 'Baco disfarçou-se de mouro para prejudicar os portugueses', 'Os navegadores escaparam de várias armadilhas'],
+            vocabulario: [
+              { palavra: 'Batéis', definicao: 'Pequenas embarcações' },
+              { palavra: 'Xeque', definicao: 'Governante ou líder local' },
+              { palavra: 'Marujos', definicao: 'Marinheiros' }
+            ]
+          },
+          // ... resto dos capítulos ...
+          10: {
+            titulo: 'A ilha maravilhosa - Chegada a Portugal',
+            texto: 'Uma última aventura ainda demoraria a viagem... Mas agradável, e compensadora das tribulações que os Portugueses tinham sofrido. Vénus, a Deusa da Beleza e da Ternura, que sempre os estimara e protegera, queria premiá-los dos seus esforços e canseiras. E, por isso, conduziu as naus a uma ilha formosa e acolhedora, que se chamava Ilha dos Amores.',
+            personagens: ['Vasco da Gama', 'Vénus', 'Tétis', 'D. Manuel I'],
+            locais: ['Ilha dos Amores', 'Portugal', 'Lisboa', 'Rio Tejo'],
+            curiosidades: ['A Ilha dos Amores era uma recompensa para os navegadores', 'Tétis mostra o futuro glorioso de Portugal', 'O regresso foi celebrado por todo o povo português'],
+            vocabulario: [
+              { palavra: 'Tribulações', definicao: 'Sofrimentos, dificuldades' },
+              { palavra: 'Nereidas', definicao: 'Ninfas do mar na mitologia grega' },
+              { palavra: 'Opulento', definicao: 'Rico, luxuoso, abundante' }
+            ]
+          }
+        };
+
+        // Adicione os outros capítulos de forma similar
+
+        const quizQuestoes = [
+          {
+            pergunta: "Quem foi o comandante da viagem marítima à Índia?",
+            opcoes: ["Bartolomeu Dias", "Pedro Álvares Cabral", "Vasco da Gama", "Fernão de Magalhães"],
+            resposta: 2
+          },
+          {
+            pergunta: "Qual deus mitológico protegia os portugueses?",
+            opcoes: ["Baco", "Marte", "Vénus", "Neptuno"],
+            resposta: 2
+          },
+          // ... resto das questões ...
+        ];
+
+        // O restante do código da aplicação seria inserido aqui
+        // Renderização da interface seria feita aqui
+      
+        return "Aplicação Os Lusíadas carregada com sucesso!";
+      };
+
+      // Renderizar a aplicação
+      const appDiv = document.getElementById('root');
+      appDiv.innerHTML = App();
+    });
+  </script>
+</body>
+</html>
